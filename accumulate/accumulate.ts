@@ -1,3 +1,7 @@
-export function accumulate(list: unknown, accumulator: unknown): never {
-  throw new Error('Remove this statement and implement this function')
+export function accumulate(list: any[], accumulator: any): number[] {
+  if (list.length === 0) {
+    return [];
+  }
+
+  return list.map(accumulator);
 }
